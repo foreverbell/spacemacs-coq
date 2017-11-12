@@ -12,11 +12,11 @@ This layer adds Spacemacs-style shortcuts for the most useful parts of Proof Gen
 
 ### Proof management
 
-Key Binding  | Description
------------  | -----------
-`<f4>`, `,.` | Go to point
-`<f3>`, `,]` | Process next command
-`<f2>`, `,[` | Undo previous command
+Key Binding       | Description
+-----------       | -----------
+`C-<right>`, `,.` | Go to point
+`C-<down>`, `,]`  | Process next command
+`C-<up>`, `,[`    | Undo previous command
 
 ### Laying out windows
 

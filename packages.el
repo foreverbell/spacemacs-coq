@@ -21,11 +21,11 @@
 
 (defun setup-coq-keys-for-map (state)
   (evil-define-key state coq-mode-map
-    (kbd "<f3>") #'proof-assert-next-command-interactive)
+    (kbd "C-<down>") #'proof-assert-next-command-interactive)
   (evil-define-key state coq-mode-map
-    (kbd "<f4>") #'company-coq-proof-goto-point)
+    (kbd "C-<right>") #'company-coq-proof-goto-point)
   (evil-define-key state coq-mode-map
-    (kbd "<f2>") #'proof-undo-last-successful-command))
+    (kbd "C-<up>") #'proof-undo-last-successful-command))
 
 (defun setup-coq-keys ()
   (setup-coq-keys-for-map 'normal)
@@ -54,9 +54,9 @@
 
 (defun coq/init-proof-general ()
   "Initialize Proof General."
-  ;; Setup from Proof General README, using a Homebrew path. Proof General
+  ;; Setup from Proof General README, using a specific path. Proof General
   ;; lazily loads from proof-site, so there's no need to use-package it.
-  (load "/usr/local/share/emacs/site-lisp/proof-general/generic/proof-site")
+  (load "~/.emacs.d/lisp/proof-general/generic/proof-site")
   (dolist (prefix '(("ml" . "pg/layout")
                     ("mp" . "pg/prover")
                     ("ma" . "pg/ask-prover")
