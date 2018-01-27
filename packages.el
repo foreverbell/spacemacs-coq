@@ -56,7 +56,7 @@
   "Initialize Proof General."
   ;; Setup from Proof General README, using a specific path. Proof General
   ;; lazily loads from proof-site, so there's no need to use-package it.
-  (load "~/.emacs.d/lisp/proof-general/generic/proof-site")
+  (load "~/.emacs.d/lisp/PG/generic/proof-site")
   (dolist (prefix '(("ml" . "pg/layout")
                     ("mp" . "pg/prover")
                     ("ma" . "pg/ask-prover")
